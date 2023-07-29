@@ -1,0 +1,422 @@
+bench/db-bench.c:50:6: style: The scope of the variable 'num_cpus' can be reduced. [variableScope]
+ int num_cpus = 0;
+     ^
+bench/db-bench.c:51:7: style: The scope of the variable 'cpu_type' can be reduced. [variableScope]
+ char cpu_type[256] = {0};
+      ^
+bench/db-bench.c:52:7: style: The scope of the variable 'cache_size' can be reduced. [variableScope]
+ char cache_size[256] = {0};
+      ^
+cache/cache.c:483:6: style: The scope of the variable 'hash' can be reduced. [variableScope]
+ int hash;
+     ^
+cache/cache.c:402:55: style:inconclusive: Function 'cache_unpin' argument 2 names different: declaration 'cpair' definition 'p'. [funcArgNamesDifferent]
+void cache_unpin(struct cache_file *cf, struct cpair *p)
+                                                      ^
+cache/cache.h:70:55: note: Function 'cache_unpin' argument 2 names different: declaration 'cpair' definition 'p'.
+void cache_unpin(struct cache_file *cf, struct cpair *cpair);
+                                                      ^
+cache/cache.c:402:55: note: Function 'cache_unpin' argument 2 names different: declaration 'cpair' definition 'p'.
+void cache_unpin(struct cache_file *cf, struct cpair *p)
+                                                      ^
+log/logr.c:115:8: style: Variable 'pos' is assigned a value that is never used. [unreadVariable]
+   pos += v->size;
+       ^
+tests/util/xtable-test.c:20:7: style: The scope of the variable 'k' can be reduced. [variableScope]
+ int *k;
+      ^
+tests/util/xtable-test.c:21:7: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ int *ret;
+      ^
+tree/block.c:53:26: style:inconclusive: Function 'block_init' argument 3 names different: declaration 'size' definition 'n'. [funcArgNamesDifferent]
+                uint32_t n)
+                         ^
+tree/block.h:44:26: note: Function 'block_init' argument 3 names different: declaration 'size' definition 'n'.
+                uint32_t size);
+                         ^
+tree/block.c:53:26: note: Function 'block_init' argument 3 names different: declaration 'size' definition 'n'.
+                uint32_t n)
+                         ^
+tree/block.c:143:45: style:inconclusive: Function 'block_get_off_bynid' argument 3 names different: declaration 'pair' definition 'bpair'. [funcArgNamesDifferent]
+                        struct block_pair **bpair)
+                                            ^
+tree/block.h:60:45: note: Function 'block_get_off_bynid' argument 3 names different: declaration 'pair' definition 'bpair'.
+                        struct block_pair **pair);
+                                            ^
+tree/block.c:143:45: note: Function 'block_get_off_bynid' argument 3 names different: declaration 'pair' definition 'bpair'.
+                        struct block_pair **bpair)
+                                            ^
+tree/cursor.c:25:14: style: The scope of the variable 'mi' can be reduced. [variableScope]
+ int lo, hi, mi, cmp;
+             ^
+tree/cursor.c:229:6: style: The scope of the variable 'children' can be reduced. [variableScope]
+ int children;
+     ^
+tree/hdr.c:350:51: style:inconclusive: Function 'deserialize_hdr_from_disk' argument 2 names different: declaration 'hdr' definition 'h'. [funcArgNamesDifferent]
+int deserialize_hdr_from_disk(int fd, struct hdr *h)
+                                                  ^
+tree/hdr.h:39:51: note: Function 'deserialize_hdr_from_disk' argument 2 names different: declaration 'hdr' definition 'h'.
+int deserialize_hdr_from_disk(int fd, struct hdr *hdr);
+                                                  ^
+tree/hdr.c:350:51: note: Function 'deserialize_hdr_from_disk' argument 2 names different: declaration 'hdr' definition 'h'.
+int deserialize_hdr_from_disk(int fd, struct hdr *h)
+                                                  ^
+tree/inter.c:230:11: style: The scope of the variable 'sz' can be reduced. [variableScope]
+ uint32_t sz = 0;
+          ^
+tree/inter.c:230:14: style: Variable 'sz' is assigned a value that is never used. [unreadVariable]
+ uint32_t sz = 0;
+             ^
+tree/layout.c:226:11: style: The scope of the variable 'bound' can be reduced. [variableScope]
+ uint32_t bound;
+          ^
+tree/layout.c:260:6: style: The scope of the variable 'r' can be reduced. [variableScope]
+ int r;
+     ^
+tree/layout.c:263:18: style: The scope of the variable 'part_packer' can be reduced. [variableScope]
+ struct msgpack *part_packer;
+                 ^
+tree/leaf.c:224:11: style: The scope of the variable 'sz' can be reduced. [variableScope]
+ uint32_t sz = 0;
+          ^
+tree/leaf.c:224:14: style: Variable 'sz' is assigned a value that is never used. [unreadVariable]
+ uint32_t sz = 0;
+             ^
+tree/lmb.c:58:11: style: The scope of the variable 'size' can be reduced. [variableScope]
+ uint32_t size;
+          ^
+tree/lmb.c:288:27: style:inconclusive: Function 'lmb_to_msgpack' argument 1 names different: declaration 'packer' definition 'p'. [funcArgNamesDifferent]
+void lmb_to_msgpack(void *p, void *n)
+                          ^
+tree/lmb.h:77:27: note: Function 'lmb_to_msgpack' argument 1 names different: declaration 'packer' definition 'p'.
+void lmb_to_msgpack(void *packer, void *msgbuf);
+                          ^
+tree/lmb.c:288:27: note: Function 'lmb_to_msgpack' argument 1 names different: declaration 'packer' definition 'p'.
+void lmb_to_msgpack(void *p, void *n)
+                          ^
+tree/lmb.c:288:36: style:inconclusive: Function 'lmb_to_msgpack' argument 2 names different: declaration 'msgbuf' definition 'n'. [funcArgNamesDifferent]
+void lmb_to_msgpack(void *p, void *n)
+                                   ^
+tree/lmb.h:77:41: note: Function 'lmb_to_msgpack' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void lmb_to_msgpack(void *packer, void *msgbuf);
+                                        ^
+tree/lmb.c:288:36: note: Function 'lmb_to_msgpack' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void lmb_to_msgpack(void *p, void *n)
+                                   ^
+tree/lmb.c:306:27: style:inconclusive: Function 'msgpack_to_lmb' argument 1 names different: declaration 'packer' definition 'p'. [funcArgNamesDifferent]
+void msgpack_to_lmb(void *p, void *n)
+                          ^
+tree/lmb.h:78:27: note: Function 'msgpack_to_lmb' argument 1 names different: declaration 'packer' definition 'p'.
+void msgpack_to_lmb(void *packer, void *msgbuf);
+                          ^
+tree/lmb.c:306:27: note: Function 'msgpack_to_lmb' argument 1 names different: declaration 'packer' definition 'p'.
+void msgpack_to_lmb(void *p, void *n)
+                          ^
+tree/lmb.c:306:36: style:inconclusive: Function 'msgpack_to_lmb' argument 2 names different: declaration 'msgbuf' definition 'n'. [funcArgNamesDifferent]
+void msgpack_to_lmb(void *p, void *n)
+                                   ^
+tree/lmb.h:78:41: note: Function 'msgpack_to_lmb' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void msgpack_to_lmb(void *packer, void *msgbuf);
+                                        ^
+tree/lmb.c:306:36: note: Function 'msgpack_to_lmb' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void msgpack_to_lmb(void *p, void *n)
+                                   ^
+tree/lmb.c:94:7: style: Local variable 'size' shadows outer variable [shadowVariable]
+  int size = le->xrs_size;
+      ^
+tree/lmb.c:58:11: note: Shadowed declaration
+ uint32_t size;
+          ^
+tree/lmb.c:94:7: note: Shadow variable
+  int size = le->xrs_size;
+      ^
+tree/msgpack.c:94:55: style:inconclusive: Function 'msgpack_pack_nstr' argument 2 names different: declaration 'd' definition 'str'. [funcArgNamesDifferent]
+int msgpack_pack_nstr(struct msgpack *pk, const char *str, uint32_t n)
+                                                      ^
+tree/msgpack.h:33:55: note: Function 'msgpack_pack_nstr' argument 2 names different: declaration 'd' definition 'str'.
+int msgpack_pack_nstr(struct msgpack *pk, const char *d, uint32_t n);
+                                                      ^
+tree/msgpack.c:94:55: note: Function 'msgpack_pack_nstr' argument 2 names different: declaration 'd' definition 'str'.
+int msgpack_pack_nstr(struct msgpack *pk, const char *str, uint32_t n)
+                                                      ^
+tree/msgpack.c:213:47: style:inconclusive: Function 'msgpack_seek' argument 2 names different: declaration 's' definition 'n'. [funcArgNamesDifferent]
+int msgpack_seek(struct msgpack *pk, uint32_t n)
+                                              ^
+tree/msgpack.h:40:47: note: Function 'msgpack_seek' argument 2 names different: declaration 's' definition 'n'.
+int msgpack_seek(struct msgpack *pk, uint32_t s);
+                                              ^
+tree/msgpack.c:213:47: note: Function 'msgpack_seek' argument 2 names different: declaration 's' definition 'n'.
+int msgpack_seek(struct msgpack *pk, uint32_t n)
+                                              ^
+tree/nmb.c:209:27: style:inconclusive: Function 'nmb_to_msgpack' argument 1 names different: declaration 'packer' definition 'p'. [funcArgNamesDifferent]
+void nmb_to_msgpack(void *p, void *n)
+                          ^
+tree/nmb.h:57:27: note: Function 'nmb_to_msgpack' argument 1 names different: declaration 'packer' definition 'p'.
+void nmb_to_msgpack(void *packer, void *msgbuf);
+                          ^
+tree/nmb.c:209:27: note: Function 'nmb_to_msgpack' argument 1 names different: declaration 'packer' definition 'p'.
+void nmb_to_msgpack(void *p, void *n)
+                          ^
+tree/nmb.c:209:36: style:inconclusive: Function 'nmb_to_msgpack' argument 2 names different: declaration 'msgbuf' definition 'n'. [funcArgNamesDifferent]
+void nmb_to_msgpack(void *p, void *n)
+                                   ^
+tree/nmb.h:57:41: note: Function 'nmb_to_msgpack' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void nmb_to_msgpack(void *packer, void *msgbuf);
+                                        ^
+tree/nmb.c:209:36: note: Function 'nmb_to_msgpack' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void nmb_to_msgpack(void *p, void *n)
+                                   ^
+tree/nmb.c:224:27: style:inconclusive: Function 'msgpack_to_nmb' argument 1 names different: declaration 'packer' definition 'p'. [funcArgNamesDifferent]
+void msgpack_to_nmb(void *p, void *n)
+                          ^
+tree/nmb.h:58:27: note: Function 'msgpack_to_nmb' argument 1 names different: declaration 'packer' definition 'p'.
+void msgpack_to_nmb(void *packer, void *msgbuf);
+                          ^
+tree/nmb.c:224:27: note: Function 'msgpack_to_nmb' argument 1 names different: declaration 'packer' definition 'p'.
+void msgpack_to_nmb(void *p, void *n)
+                          ^
+tree/nmb.c:224:36: style:inconclusive: Function 'msgpack_to_nmb' argument 2 names different: declaration 'msgbuf' definition 'n'. [funcArgNamesDifferent]
+void msgpack_to_nmb(void *p, void *n)
+                                   ^
+tree/nmb.h:58:41: note: Function 'msgpack_to_nmb' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void msgpack_to_nmb(void *packer, void *msgbuf);
+                                        ^
+tree/nmb.c:224:36: note: Function 'msgpack_to_nmb' argument 2 names different: declaration 'msgbuf' definition 'n'.
+void msgpack_to_nmb(void *p, void *n)
+                                   ^
+txn/txnmgr.c:124:53: style:inconclusive: Function 'txnmgr_child_txn_start' argument 2 names different: declaration 'parnet' definition 'parent'. [funcArgNamesDifferent]
+void txnmgr_child_txn_start(struct txnmgr* tm, TXN *parent, TXN *child)
+                                                    ^
+txn/txnmgr.h:24:53: note: Function 'txnmgr_child_txn_start' argument 2 names different: declaration 'parnet' definition 'parent'.
+void txnmgr_child_txn_start(struct txnmgr* tm, TXN *parnet, TXN *txn);
+                                                    ^
+txn/txnmgr.c:124:53: note: Function 'txnmgr_child_txn_start' argument 2 names different: declaration 'parnet' definition 'parent'.
+void txnmgr_child_txn_start(struct txnmgr* tm, TXN *parent, TXN *child)
+                                                    ^
+txn/txnmgr.c:124:66: style:inconclusive: Function 'txnmgr_child_txn_start' argument 3 names different: declaration 'txn' definition 'child'. [funcArgNamesDifferent]
+void txnmgr_child_txn_start(struct txnmgr* tm, TXN *parent, TXN *child)
+                                                                 ^
+txn/txnmgr.h:24:66: note: Function 'txnmgr_child_txn_start' argument 3 names different: declaration 'txn' definition 'child'.
+void txnmgr_child_txn_start(struct txnmgr* tm, TXN *parnet, TXN *txn);
+                                                                 ^
+txn/txnmgr.c:124:66: note: Function 'txnmgr_child_txn_start' argument 3 names different: declaration 'txn' definition 'child'.
+void txnmgr_child_txn_start(struct txnmgr* tm, TXN *parent, TXN *child)
+                                                                 ^
+util/counter.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+util/crc32.c:45:37: style:inconclusive: Function 'crc16' argument 2 names different: declaration 'n' definition 'len'. [funcArgNamesDifferent]
+uint16_t crc16(const char *buf, int len)
+                                    ^
+util/crc32.h:12:37: note: Function 'crc16' argument 2 names different: declaration 'n' definition 'len'.
+uint16_t crc16(const char *buf, int n);
+                                    ^
+util/crc32.c:45:37: note: Function 'crc16' argument 2 names different: declaration 'n' definition 'len'.
+uint16_t crc16(const char *buf, int len)
+                                    ^
+util/debug.c:46:2: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+ printf("Assertion failed: %s, file %s, line %d\n", (char*)expr, (char*)filename, lineno);
+ ^
+util/debug.c:16:7: style: The scope of the variable 'buf' can be reduced. [variableScope]
+ char buf[64];
+      ^
+util/debug.c:19:14: style: The scope of the variable 'c' can be reduced. [variableScope]
+ const char *c[] = {"INFO", "DEBUG", "WARN", "ERROR"};
+             ^
+util/kibbutz.c:87:6: style: The scope of the variable 'r' can be reduced. [variableScope]
+ int r;
+     ^
+util/mempool.c:101:47: style: Same value in both branches of ternary operator. [duplicateValueTernary]
+ align = ((sizeof(void*) > 8) ? sizeof(void*) : 8);
+                                              ^
+util/pma.c:59:11: warning: Either the condition 'a' is redundant or there is possible null pointer dereference: a. [nullPointerRedundantCheck]
+ int hi = a->used - 1;
+          ^
+util/pma.c:62:2: note: Assuming that condition 'a' is not redundant
+ nassert(a);
+ ^
+util/pma.c:59:11: note: Null pointer dereference
+ int hi = a->used - 1;
+          ^
+util/pma.c:90:11: warning: Either the condition 'a' is redundant or there is possible null pointer dereference: a. [nullPointerRedundantCheck]
+ int hi = a->used - 1;
+          ^
+util/pma.c:93:2: note: Assuming that condition 'a' is not redundant
+ nassert(a);
+ ^
+util/pma.c:90:11: note: Null pointer dereference
+ int hi = a->used - 1;
+          ^
+util/snappy.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+util/snappy.c:248:2: style:inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+ return false;
+ ^
+util/snappy.c:771:45: style:inconclusive: Function 'snappy_uncompressed_length' argument 1 names different: declaration 'buf' definition 'start'. [funcArgNamesDifferent]
+bool snappy_uncompressed_length(const char *start, size_t n, size_t * result)
+                                            ^
+util/snappy.h:34:45: note: Function 'snappy_uncompressed_length' argument 1 names different: declaration 'buf' definition 'start'.
+bool snappy_uncompressed_length(const char *buf, size_t len, size_t *result);
+                                            ^
+util/snappy.c:771:45: note: Function 'snappy_uncompressed_length' argument 1 names different: declaration 'buf' definition 'start'.
+bool snappy_uncompressed_length(const char *start, size_t n, size_t * result)
+                                            ^
+util/snappy.c:771:59: style:inconclusive: Function 'snappy_uncompressed_length' argument 2 names different: declaration 'len' definition 'n'. [funcArgNamesDifferent]
+bool snappy_uncompressed_length(const char *start, size_t n, size_t * result)
+                                                          ^
+util/snappy.h:34:57: note: Function 'snappy_uncompressed_length' argument 2 names different: declaration 'len' definition 'n'.
+bool snappy_uncompressed_length(const char *buf, size_t len, size_t *result);
+                                                        ^
+util/snappy.c:771:59: note: Function 'snappy_uncompressed_length' argument 2 names different: declaration 'len' definition 'n'.
+bool snappy_uncompressed_length(const char *start, size_t n, size_t * result)
+                                                          ^
+util/vfs.c:37:6: style: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+     __PANIC("create dir error, %s", dirname);
+     ^
+util/xmalloc.c:61:30: style:inconclusive: Function 'xrealloc_aligned' argument 1 names different: declaration 'p' definition 'raw'. [funcArgNamesDifferent]
+void *xrealloc_aligned(void *raw, size_t olds, size_t alignment, size_t s)
+                             ^
+util/xmalloc.h:14:30: note: Function 'xrealloc_aligned' argument 1 names different: declaration 'p' definition 'raw'.
+void *xrealloc_aligned(void *p, size_t olds, size_t alignment, size_t s);
+                             ^
+util/xmalloc.c:61:30: note: Function 'xrealloc_aligned' argument 1 names different: declaration 'p' definition 'raw'.
+void *xrealloc_aligned(void *raw, size_t olds, size_t alignment, size_t s)
+                             ^
+tree/block.c:170:0: style: The function 'block_shrink' is never used. [unusedFunction]
+
+^
+tree/buftree.c:396:0: style: The function 'buftree_set_node_fanout' is never used. [unusedFunction]
+
+^
+util/counter.c:38:0: style: The function 'counter_all' is never used. [unusedFunction]
+
+^
+util/counter.c:19:0: style: The function 'counter_free' is never used. [unusedFunction]
+
+^
+util/counter.c:26:0: style: The function 'counter_incr' is never used. [unusedFunction]
+
+^
+util/counter.c:9:0: style: The function 'counter_new' is never used. [unusedFunction]
+
+^
+tree/cursor.c:329:0: style: The function 'cursor_free' is never used. [unusedFunction]
+
+^
+tree/cursor.c:318:0: style: The function 'cursor_new' is never used. [unusedFunction]
+
+^
+db/db.c:50:0: style: The function 'db_del' is never used. [unusedFunction]
+
+^
+db/db.c:59:0: style: The function 'db_get' is never used. [unusedFunction]
+
+^
+db/env.c:74:0: style: The function 'env_set_compare_func' is never used. [unusedFunction]
+
+^
+db/env.c:65:0: style: The function 'env_set_compress_method' is never used. [unusedFunction]
+
+^
+util/snappy.c:256:0: style: The function 'find_lsb_set_non_zero64' is never used. [unusedFunction]
+
+^
+log/logger.c:22:0: style: The function 'logger_free' is never used. [unusedFunction]
+
+^
+log/logger.c:11:0: style: The function 'logger_new' is never used. [unusedFunction]
+
+^
+log/logr.c:130:0: style: The function 'logr_close' is never used. [unusedFunction]
+
+^
+log/logr.c:21:0: style: The function 'logr_open' is never used. [unusedFunction]
+
+^
+log/logr.c:43:0: style: The function 'logr_read' is never used. [unusedFunction]
+
+^
+log/logw.c:56:0: style: The function 'logw_append' is never used. [unusedFunction]
+
+^
+log/logw.c:122:0: style: The function 'logw_close' is never used. [unusedFunction]
+
+^
+log/logw.c:117:0: style: The function 'logw_fsync' is never used. [unusedFunction]
+
+^
+log/logw.c:16:0: style: The function 'logw_open' is never used. [unusedFunction]
+
+^
+util/mempool.c:59:0: style: The function 'mempool_alloc' is never used. [unusedFunction]
+
+^
+tree/msgpack.c:239:0: style: The function 'msgpack_get_str' is never used. [unusedFunction]
+
+^
+util/posix.c:122:0: style: The function 'ness_cron_change_period' is never used. [unusedFunction]
+
+^
+util/pma.c:329:0: style: The function 'pma_count' is never used. [unusedFunction]
+
+^
+tree/rolltree.c:26:0: style: The function 'rolltree_free' is never used. [unusedFunction]
+
+^
+tree/rolltree.c:11:0: style: The function 'rolltree_put' is never used. [unusedFunction]
+
+^
+util/snappy.c:1685:0: style: The function 'snappy_init_env_sg' is never used. [unusedFunction]
+
+^
+util/snappy.c:771:0: style: The function 'snappy_uncompressed_length' is never used. [unusedFunction]
+
+^
+tree/cursor.c:471:0: style: The function 'tree_cursor_current' is never used. [unusedFunction]
+
+^
+tree/cursor.c:382:0: style: The function 'tree_cursor_first' is never used. [unusedFunction]
+
+^
+tree/cursor.c:405:0: style: The function 'tree_cursor_last' is never used. [unusedFunction]
+
+^
+tree/cursor.c:427:0: style: The function 'tree_cursor_next' is never used. [unusedFunction]
+
+^
+tree/cursor.c:449:0: style: The function 'tree_cursor_prev' is never used. [unusedFunction]
+
+^
+tree/cursor.c:377:0: style: The function 'tree_cursor_valid' is never used. [unusedFunction]
+
+^
+txn/txn.c:70:0: style: The function 'txn_abort' is never used. [unusedFunction]
+
+^
+txn/txn.c:10:0: style: The function 'txn_begin' is never used. [unusedFunction]
+
+^
+txn/txn.c:50:0: style: The function 'txn_commit' is never used. [unusedFunction]
+
+^
+txn/txn.c:121:0: style: The function 'txn_finish' is never used. [unusedFunction]
+
+^
+txn/txnmgr.c:52:0: style: The function 'txnmgr_txn_islive' is never used. [unusedFunction]
+
+^
+util/xmalloc.c:121:0: style: The function 'xcheck_all_free' is never used. [unusedFunction]
+
+^
+util/xmalloc.c:36:0: style: The function 'xmalloc_aligned' is never used. [unusedFunction]
+
+^
+util/xmalloc.c:78:0: style: The function 'xmemdup' is never used. [unusedFunction]
+
+^
+util/xmalloc.c:116:0: style: The function 'xreset' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
